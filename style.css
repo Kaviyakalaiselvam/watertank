@@ -1,27 +1,41 @@
 @Keyframes wateropen{
-  from {height:0;top:100%}
-  to{height:100%;top:0 } 
+  from {height:30px;}
+  to{height:200px; } 
 }
+
+
+@Keyframes watertankanimation{
+  from {height:100%;bottom:100%}
+  to{ height:0;bottom:100%} 
+}
+@keyframes wateranimae {
+  
+  from{height:0% 77%, 4% 70%, 7% 65%, 11% 59%, 16% 55%, 23% 51%, 30% 51%, 36% 54%, 40% 58%, 43% 61%, 47% 68%, 51% 71%, 58% 74%, 66% 68%, 70% 63%, 75% 57%, 79% 52%, 88% 45%, 93% 42%, 99% 41%, 100% 100%, 2% 98%, 0% 99%, 7% 99%, 0% 100%;}
+  to{height: 0% 52%0% 52%, 6% 56%, 6% 56%, 10% 61%, 10% 61%, 17% 66%, 17% 66%, 22% 67%, 22% 67%, 29% 67%, 29% 70%, 35% 63%, 35% 63%, 43% 56%, 43% 56%, 50% 49%, 50% 49%, 58% 43%, 58% 43%, 66% 39%, 66% 39%, 77% 36%, 77% 36%, 84% 36%, 84% 36%, 92% 37%, 92% 37%;}
+}
+
 #container{
  display:flex;
  justify-content: center;
  align-items: center;
  height: 70vh;
  margin-left: -700px;
+ 
 }
 #can{
+  
   width:150px;
   height: 200px;
-  background-color: #d3d3d3;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  box-shadow: 2px 2px 2px 2px grey;
+  background-color: white;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  
 }
 #water{
   height:100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background-color: skyblue;
+  
+  background-color: red;
 
 }
 #tap{
@@ -57,11 +71,12 @@ button{
   border:0;
 }
 #waterflow{
-  height:100px;
+  height:50px;
   width:10px;
   background-color: #fff;
   position: absolute;
   top:315px;
+  z-index: 2;
 }
 
 
@@ -79,16 +94,15 @@ button{
 #can1{
   width:150px;
   height: 200px;
-  background-color: #d3d3d3;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  box-shadow: 2px 2px 2px 2px gray;
+  background-color: white;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-style: solid;
 }
 #water1{
   height:100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background-color: cyan;
+ 
+  background-color: lightgreen;
 
 }
 #tap1{
@@ -123,11 +137,12 @@ button{
   border:0;
 }
 #waterflow1{
-  height:100px;
+  height:50px;
   width:10px;
   background-color: #fff;
   position: absolute;
   top:325px;
+  z-index: 2;
 }
 
 
@@ -147,16 +162,15 @@ button{
 #can2{
   width:150px;
   height: 200px;
-  background-color: #d3d3d3;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  box-shadow: 2px 2px 2px 2px grey;
+  background-color: white;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-style: solid;
 }
 #water2{
   height:100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background-color: blueviolet;
+ 
+  background-color: blue;
 
 }
 #tap2{
@@ -191,11 +205,12 @@ button{
   border:0;
 }
 #waterflow2{
-  height:100px;
+  height:50px;
   width:10px;
   background-color: #fff;
   position: absolute;
   top:325px;
+  z-index: 2;
 }
 
  
@@ -208,21 +223,24 @@ button{
   
  }
  #can3{
+  overflow: hidden;
   position: absolute;
    width:1000px;
    height: 200px;
    background-color:white;
   border-radius: 10px 10px 10px 10px ;
    margin-left: 750px;
-   margin-top: -300px;
-   box-shadow: 2px 2px 2px 2px black;
+   /* margin-top: -300px; */
+   border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  margin-top: -300px;
  }
- #water3{
-   height:100px;
-   background-color: skyblue;
-   margin-top: 100px;
-   border-bottom-left-radius: 5px;
-   border-bottom-right-radius: 5px;
- } 
-
  
+ #water3{
+  height:170px;
+  border-bottom-left-radius:10px ;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+  animation-play-state: paused;
+ }
